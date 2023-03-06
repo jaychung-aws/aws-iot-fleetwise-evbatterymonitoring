@@ -31,62 +31,62 @@ NS_ :
 
 BS_:
 
-BU_:
+BU_: 
+
 
 BO_ 100 ActualVehicleSpeed_kph: 8 Vector__XXX
- SG_ ActualVehicleSpeed_kph : 0|24@1+ (0.5,0.0) [0|320] "kph" Vector__XXX
-
-
+ SG_ ActualVehicleSpeed_kph : 0|24@1+ (0.5,0) [0|320] "kph" Vector__XXX
 
 BO_ 201 BatteryPack01VoltagePlus_v: 8 Vector__XXX
- SG_ BatteryPack01VoltagePlus_v : 0|24@1+ (0.25,-100.0) [-100|1000] "v" Vector__XXX
+ SG_ BatteryPack01VoltagePlus_v : 0|24@1+ (0.25,-100) [-100|1000] "v" Vector__XXX
 
 BO_ 202 BatteryPack01VoltageMinus_v: 8 Vector__XXX
- SG_ BatteryPack01VoltageMinus_v : 0|24@1+ (0.25,-100.0) [-100|1000] "v" Vector__XXX
+ SG_ BatteryPack01VoltageMinus_v : 0|24@1+ (0.25,-100) [-100|1000] "v" Vector__XXX
 
-
-
-BO_ 301 BatteryPack01Module01te: 8 Vector__XXX
+BO_ 301 BatteryPack01Module01AvgCellTe: 8 Vector__XXX
  SG_ BatteryPack01Module01AvgCellTemperature_c : 0|24@1+ (0.5,-40) [-40|1000] "degC" Vector__XXX
 
-
 BO_ 500 BMSRelay01Status_enum: 8 Vector__XXX
-  SG_ BMSRelay01Status : 0|24@1+ (1,0.0) [0|9999999] "status" Vector__XXX
+ SG_ BMSRelay01Status : 0|24@1+ (1,0) [0|9999999] "status" Vector__XXX
 
 BO_ 501 BMSRelay01StatusQualifier_enum: 8 Vector__XXX
-  SG_ BMSRelay01StatusQualifier : 0|24@1+ (1,0.0) [0|5] "qualifier" Vector__XXX
+ SG_ BMSRelay01StatusQualifier : 0|24@1+ (1,0) [0|5] "qualifier" Vector__XXX
 
-BO_ 600 BatteryPack01ShuntPlusCurrent_a: 8 Vector__XXX
-  SG_ BatteryPack01ShuntPlusCurrent_a : 8|16@1+ (0.02,5.0) [0|10000] "amp" Vector__XXX
+BO_ 600 BatteryPack01ShuntPlusCurrent_: 8 Vector__XXX
+ SG_ BatteryPack01ShuntPlusCurrent_a : 0|24@1+ (0.01,0) [0|10000] "amp" Vector__XXX
 
-BO_ 601 BatteryPack01ShuntMinusCurrent_a: 8 Vector__XXX
-  SG_ BatteryPack01ShuntMinusCurrent_a : 0|24@1+ (0.01,0.0) [0|10000] "amp" Vector__XXX
+BO_ 601 BatteryPack01ShuntMinusCurrent: 8 Vector__XXX
+ SG_ BatteryPack01ShuntMinusCurrent_a : 0|24@1+ (0.01,0) [0|10000] "amp" Vector__XXX
 
-BO_ 602 BatteryPack01ShuntPlusCurrentQualifier_enum: 8 Vector__XXX
-  SG_ BatteryPack01ShuntPlusCurrentQualifier_enum : 0|24@1+ (1,0.0) [0|5] "qualifier" Vector__XXX
+BO_ 602 BatteryPack01ShuntPlusCurrentQ: 8 Vector__XXX
+ SG_ BatteryPack01ShuntPlusCurrentQualifier_enum : 0|24@1+ (1,0) [0|5] "qualifier" Vector__XXX
 
-BO_ 603 BatteryPack01ShuntMinusCurrentQualifier_enum: 8 Vector__XXX
-  SG_ BatteryPack01ShuntMinusCurrentQualifier_enum : 0|24@1+ (1,0.0) [0|5] "qualifier" Vector__XXX
+BO_ 603 BatteryPack01ShuntMinusCurre01: 8 Vector__XXX
+ SG_ BatteryPack01ShuntMinusCurrentQualifier_enum : 0|24@1+ (1,0) [0|5] "qualifier" Vector__XXX
+
+BO_ 317 BatteryPack01Module02AvgCellTe: 8 Vector__XXX
+ SG_ BatteryPack01Module02AvgCellTemperature_c : 0|24@1+ (0.5,-40) [-40|1000] "degC" Vector__XXX
+
+BO_ 285 BatteryPack01MaxAvgModuleTempe: 8 Vector__XXX
+ SG_ BatteryPack01MaxAvgModuleTemperature_c : 0|24@1+ (0.5,-40) [-40|1000] "degC" Vector__XXX
+
+BO_ 200 BatteryPack01CoolingStatus_boo: 8 Vector__XXX
+ SG_ BatteryPack01CoolingStatus_boolean : 7|8@0+ (1,0) [0|1] "" Vector__XXX
 
 
 BA_DEF_ SG_  "SignalType" STRING ;
-BA_DEF_ SG_  "SignalLongName" STRING ;
 BA_DEF_ BO_  "GenMsgCycleTime" INT 0 10000;
 BA_DEF_DEF_  "SignalType" "";
-BA_DEF_DEF_  "SignalLongName" "";
-BA_DEF_DEF_  "GenMsgCycleTime" 50;
-
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
 BA_ "GenMsgCycleTime" BO_ 100 50;
-
 BA_ "GenMsgCycleTime" BO_ 201 50;
 BA_ "GenMsgCycleTime" BO_ 202 50;
-
 BA_ "GenMsgCycleTime" BO_ 301 50;
-
 BA_ "GenMsgCycleTime" BO_ 500 50;
 BA_ "GenMsgCycleTime" BO_ 501 50;
-
 BA_ "GenMsgCycleTime" BO_ 600 50;
 BA_ "GenMsgCycleTime" BO_ 601 50;
 BA_ "GenMsgCycleTime" BO_ 602 50;
 BA_ "GenMsgCycleTime" BO_ 603 50;
+BA_ "GenMsgCycleTime" BO_ 317 50;
+

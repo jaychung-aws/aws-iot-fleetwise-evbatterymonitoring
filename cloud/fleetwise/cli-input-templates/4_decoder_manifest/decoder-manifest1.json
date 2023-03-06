@@ -25,7 +25,6 @@
       "type": "OBD_INTERFACE"
     }
   ],
-
   "signalDecoders": [
     {
       "canSignal": {
@@ -42,7 +41,6 @@
       "interfaceId": "1",
       "type": "CAN_SIGNAL"
     },
-
     {
       "canSignal": {
         "factor": 0.25,
@@ -57,7 +55,6 @@
       "interfaceId": "1",
       "type": "CAN_SIGNAL"
     },
-
     {
       "canSignal": {
         "factor": 0.25,
@@ -72,7 +69,21 @@
       "interfaceId": "1",
       "type": "CAN_SIGNAL"
     },
-
+    {
+      "canSignal": {
+        "name": "BatteryPack01MaxAvgModuleTemperature_c",
+        "factor": 0.5,
+        "isBigEndian": false,
+        "isSigned": false,
+        "length": 24,
+        "messageId": 285,
+        "offset": -40.0,
+        "startBit": 0
+      },
+      "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.MaxAvgModuleTemperature",
+      "interfaceId": "1",
+      "type": "CAN_SIGNAL"
+    },
     {
       "canSignal": {
         "factor": 0.5,
@@ -87,7 +98,6 @@
       "interfaceId": "1",
       "type": "CAN_SIGNAL"
     },
-
     {
       "canSignal": {
         "factor": 0.5,
@@ -102,37 +112,6 @@
       "interfaceId": "1",
       "type": "CAN_SIGNAL"
     },
-
-    {
-      "canSignal": {
-        "factor": 0.5,
-        "isBigEndian": false,
-        "isSigned": false,
-        "length": 24,
-        "messageId": 333,
-        "offset": -40.0,
-        "startBit": 0
-      },
-      "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.Module03.AvgCellTemperature",
-      "interfaceId": "1",
-      "type": "CAN_SIGNAL"
-    },
-
-    {
-      "canSignal": {
-        "factor": 0.5,
-        "isBigEndian": false,
-        "isSigned": false,
-        "length": 24,
-        "messageId": 349,
-        "offset": -40.0,
-        "startBit": 0
-      },
-      "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.Module04.AvgCellTemperature",
-      "interfaceId": "1",
-      "type": "CAN_SIGNAL"
-    },
-
     {
       "canSignal": {
         "factor": 0.01,
@@ -147,7 +126,6 @@
       "interfaceId": "1",
       "type": "CAN_SIGNAL"
     },
-
     {
       "canSignal": {
         "factor": 0.01,
@@ -162,7 +140,6 @@
       "interfaceId": "1",
       "type": "CAN_SIGNAL"
     },
-
     {
       "fullyQualifiedName": "OBD.EngineSpeed",
       "interfaceId": "2",
@@ -232,6 +209,21 @@
         "startBit": 0
       },
       "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.ShuntMinusCurrentQualifier_enum",
+      "interfaceId": "1",
+      "type": "CAN_SIGNAL"
+    },
+    {
+      "canSignal": {
+        "name": "BatteryPack01CoolingStatus_boolean",
+        "factor": 1,
+        "isBigEndian": false,
+        "isSigned": false,
+        "length": 8,
+        "messageId": 200,
+        "offset": 0.0,
+        "startBit": 0
+      },
+      "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.CoolingStatus",
       "interfaceId": "1",
       "type": "CAN_SIGNAL"
     }

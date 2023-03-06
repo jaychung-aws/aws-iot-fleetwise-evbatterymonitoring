@@ -16,6 +16,7 @@
     "EVBatterySample.BMS.BatteryPack01.Module01.AvgCellTemperature",
     "EVBatterySample.BMS.BatteryPack01.Module02.AvgCellTemperature",
     "EVBatterySample.BMS.Relay01.StatusQualifier_enum",
-    "EVBatterySample.BMS.Relay01.Status"
+    "EVBatterySample.BMS.Relay01.Status",
+    "EVBatterySample.BMS.BatteryPack01.CoolingStatus"
   ] 
 }

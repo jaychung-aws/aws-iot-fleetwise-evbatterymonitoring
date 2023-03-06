@@ -1,6 +1,6 @@
 {
     "name": "continious-monitoring-inspection-campaign",
-    "targetArn": "arn:aws:iotfleetwise:${AWS_REGION}:${AWS_ACCOUNT_ID}:fleet/blog-inspection-fleet",
+    "targetArn": "arn:aws:iotfleetwise:${AWS_REGION}:${AWS_ACCOUNT_ID}:fleet/blog-unhealthy-fleet",
     "signalCatalogArn": "arn:aws:iotfleetwise:${AWS_REGION}:${AWS_ACCOUNT_ID}:signal-catalog/main-signal-catalog",
     "collectionScheme": {
         "timeBasedCollectionScheme": {
@@ -14,52 +14,60 @@
     "spoolingMode": "TO_DISK",
     "signalsToCollect": [
         {
-            "name": "EVBatterySample.BMS.BatteryPack01.BatteryPackVoltagePlus",
-            "maxSampleCount": 3
+            "maxSampleCount": 100,
+            "name": "OBD.EngineSpeed"
         },
         {
-            "name": "EVBatterySample.BMS.BatteryPack01.BatteryPackVoltageMinus",
-            "maxSampleCount": 3
+            "maxSampleCount": 100,
+            "name": "EVBatterySample.Drivetrain.ActualVehicleSpeed"
         },
         {
-            "name": "EVBatterySample.Drivetrain.ActualVehicleSpeed",
-            "maxSampleCount": 3
+            "maxSampleCount": 100,
+            "name": "EVBatterySample.BMS.BatteryPack01.BatteryPackVoltagePlus"
         },
         {
-            "name": "EVBatterySample.BMS.BatteryPack01.Module01.AvgCellTemperature",
-            "maxSampleCount": 3
+            "maxSampleCount": 100,
+            "name": "EVBatterySample.BMS.BatteryPack01.BatteryPackVoltageMinus"
         },
         {
-            "name": "EVBatterySample.BMS.BatteryPack01.Module02.AvgCellTemperature",
-            "maxSampleCount": 3
+            "maxSampleCount": 100,
+            "name": "EVBatterySample.BMS.BatteryPack01.MaxAvgModuleTemperature"
         },
         {
-            "name": "EVBatterySample.BMS.BatteryPack01.Module03.AvgCellTemperature",
-            "maxSampleCount": 3
+            "maxSampleCount": 100,
+            "name": "EVBatterySample.BMS.BatteryPack01.ShuntPlusCurrent_a"
         },
         {
-            "name": "EVBatterySample.BMS.BatteryPack01.Module04.AvgCellTemperature",
-            "maxSampleCount": 3
+            "maxSampleCount": 100,
+            "name": "EVBatterySample.BMS.BatteryPack01.ShuntMinusCurrent_a"
         },
         {
-            "name": "EVBatterySample.BMS.BatteryPack01.ShuntPlusCurrent_a",
-            "maxSampleCount": 3
+            "maxSampleCount": 100,
+            "name": "EVBatterySample.BMS.BatteryPack01.ShuntPlusCurrentQualifier_enum"
         },
         {
-            "name": "EVBatterySample.BMS.BatteryPack01.ShuntMinusCurrent_a",
-            "maxSampleCount": 3
+            "maxSampleCount": 100,
+            "name": "EVBatterySample.BMS.BatteryPack01.ShuntMinusCurrentQualifier_enum"
         },
         {
-            "name": "EVBatterySample.BMS.BatteryPack01.ShuntPlusCurrentQualifier_enum",
-            "maxSampleCount": 3
+            "maxSampleCount": 100,
+            "name": "EVBatterySample.BMS.BatteryPack01.CoolingStatus"
         },
         {
-            "name": "EVBatterySample.BMS.BatteryPack01.ShuntMinusCurrentQualifier_enum",
-            "maxSampleCount": 3
+            "maxSampleCount": 100,
+            "name": "EVBatterySample.BMS.BatteryPack01.Module01.AvgCellTemperature"
         },
         {
-            "name": "EVBatterySample.BMS.BatteryPack01.CoolingState",
-            "maxSampleCount": 3
+            "maxSampleCount": 100,
+            "name": "EVBatterySample.BMS.BatteryPack01.Module02.AvgCellTemperature"
+        },
+        {
+            "maxSampleCount": 100,
+            "name": "EVBatterySample.BMS.BatteryPack01.Module03.AvgCellTemperature"
+        },
+        {
+            "maxSampleCount": 100,
+            "name": "EVBatterySample.BMS.BatteryPack01.Module04.AvgCellTemperature"
         }
     ]
 }
