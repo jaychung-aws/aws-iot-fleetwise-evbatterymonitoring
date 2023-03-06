@@ -12,6 +12,7 @@
     "EVBatterySample.BMS.BatteryPack01.ShuntMinusCurrent_a",
     "EVBatterySample.BMS.BatteryPack01.ShuntPlusCurrentQualifier_enum",
     "EVBatterySample.BMS.BatteryPack01.ShuntMinusCurrentQualifier_enum",
+    "EVBatterySample.BMS.BatteryPack01.MaxAvgModuleTemperature",
     "EVBatterySample.BMS.BatteryPack01.Module01.AvgCellTemperature",
     "EVBatterySample.BMS.BatteryPack01.Module02.AvgCellTemperature",
     "EVBatterySample.BMS.BatteryPack01.Module03.AvgCellTemperature",

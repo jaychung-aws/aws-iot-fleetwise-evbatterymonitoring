@@ -129,6 +129,12 @@
     },
     {
       "sensor": {
+        "dataType": "UINT16",
+        "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.MaxAvgModuleTemperature"
+      }
+    }
+    {
+      "sensor": {
         "dataType": "DOUBLE",
         "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.Module01.AvgCellTemperature",
         "max": 500,
