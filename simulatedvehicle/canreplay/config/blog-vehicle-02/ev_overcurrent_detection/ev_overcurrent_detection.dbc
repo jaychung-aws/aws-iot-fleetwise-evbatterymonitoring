@@ -46,8 +46,8 @@ BO_ 202 BatteryPack01VoltageMinus_v: 8 Vector__XXX
 
 
 
-BO_ 301 BatteryPack01Cell001temperature_c: 8 Vector__XXX
- SG_ BatteryPack01Cell001temperature_c : 0|24@1+ (0.5,-40) [-40|1000] "degC" Vector__XXX
+BO_ 301 BatteryPack01Module01te: 8 Vector__XXX
+ SG_ BatteryPack01Module01AvgCellTemperature_c : 0|24@1+ (0.5,-40) [-40|1000] "degC" Vector__XXX
 
 
 BO_ 500 BMSRelay01Status_enum: 8 Vector__XXX

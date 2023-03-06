@@ -26,19 +26,19 @@
             "maxSampleCount": 3
         },
         {
-            "name": "EVBatterySample.BMS.BatteryPack01.Module01.Cell001.CellTemperature",
+            "name": "EVBatterySample.BMS.BatteryPack01.Module01.AvgCellTemperature",
             "maxSampleCount": 3
         },
         {
-            "name": "EVBatterySample.BMS.BatteryPack01.Module02.Cell001.CellTemperature",
+            "name": "EVBatterySample.BMS.BatteryPack01.Module02.AvgCellTemperature",
             "maxSampleCount": 3
         },
         {
-            "name": "EVBatterySample.BMS.BatteryPack01.Module03.Cell001.CellTemperature",
+            "name": "EVBatterySample.BMS.BatteryPack01.Module03.AvgCellTemperature",
             "maxSampleCount": 3
         },
         {
-            "name": "EVBatterySample.BMS.BatteryPack01.Module04.Cell001.CellTemperature",
+            "name": "EVBatterySample.BMS.BatteryPack01.Module04.AvgCellTemperature",
             "maxSampleCount": 3
         },
         {

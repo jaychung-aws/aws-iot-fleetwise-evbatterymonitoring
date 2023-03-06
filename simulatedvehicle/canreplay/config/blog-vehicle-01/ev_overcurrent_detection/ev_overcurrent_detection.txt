@@ -1,4 +1,4 @@
-t	ActualVehicleSpeed_kph	BatteryPack01ShuntPlusCurrent_a	BatteryPack01ShuntPlusCurrentQualifier_enum	BatteryPack01ShuntMinusCurrent_a	BatteryPack01ShuntMinusCurrentQualifier_enum	BMSRelay01Status_enum	BMSRelay01StatusQualifier_enum	BatteryPack01VoltagePlus_v	BatteryPack01VoltageMinus_v	BatteryPack01Cell001temperature_c
+t	ActualVehicleSpeed_kph	BatteryPack01ShuntPlusCurrent_a	BatteryPack01ShuntPlusCurrentQualifier_enum	BatteryPack01ShuntMinusCurrent_a	BatteryPack01ShuntMinusCurrentQualifier_enum	BMSRelay01Status_enum	BMSRelay01StatusQualifier_enum	BatteryPack01VoltagePlus_v	BatteryPack01VoltageMinus_v	BatteryPack01Module01AvgCellTemperature_c
 1	1.14	301.04	0.0	303.31	0.0	0.0	0.0	200.61	196.39	12.99
 2	2.2	310.67	0.0	308.86	0.0	0.0	0.0	201.13	199.56	14.13
 3	3.42	307.84	0.0	312.13	0.0	0.0	0.0	196.51	200.63	13.12

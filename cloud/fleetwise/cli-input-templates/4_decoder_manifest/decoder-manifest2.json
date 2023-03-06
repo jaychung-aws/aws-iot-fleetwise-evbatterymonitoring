@@ -83,7 +83,7 @@
         "offset": -40.0,
         "startBit": 0
       },
-      "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.Module01.Cell001.CellTemperature",
+      "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.Module01.AvgCellTemperature",
       "interfaceId": "1",
       "type": "CAN_SIGNAL"
     },
@@ -98,7 +98,7 @@
         "offset": -40.0,
         "startBit": 0
       },
-      "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.Module02.Cell001.CellTemperature",
+      "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.Module02.AvgCellTemperature",
       "interfaceId": "1",
       "type": "CAN_SIGNAL"
     },
@@ -113,7 +113,7 @@
         "offset": -40.0,
         "startBit": 0
       },
-      "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.Module03.Cell001.CellTemperature",
+      "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.Module03.AvgCellTemperature",
       "interfaceId": "1",
       "type": "CAN_SIGNAL"
     },
@@ -128,7 +128,7 @@
         "offset": -40.0,
         "startBit": 0
       },
-      "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.Module04.Cell001.CellTemperature",
+      "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.Module04.AvgCellTemperature",
       "interfaceId": "1",
       "type": "CAN_SIGNAL"
     },

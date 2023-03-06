@@ -24,7 +24,7 @@
       "maxSampleCount": 1
     },
     {
-      "name": "EVBatterySample.BMS.BatteryPack01.Module01.Cell001.CellTemperature",
+      "name": "EVBatterySample.BMS.BatteryPack01.Module01.AvgCellTemperature",
       "maxSampleCount": 3
   },
     {

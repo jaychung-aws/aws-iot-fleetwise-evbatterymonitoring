@@ -12,10 +12,10 @@
     "EVBatterySample.BMS.BatteryPack01.ShuntMinusCurrent_a",
     "EVBatterySample.BMS.BatteryPack01.ShuntPlusCurrentQualifier_enum",
     "EVBatterySample.BMS.BatteryPack01.ShuntMinusCurrentQualifier_enum",
-    "EVBatterySample.BMS.BatteryPack01.Module01.Cell001.CellTemperature",
-    "EVBatterySample.BMS.BatteryPack01.Module02.Cell001.CellTemperature",
-    "EVBatterySample.BMS.BatteryPack01.Module03.Cell001.CellTemperature",
-    "EVBatterySample.BMS.BatteryPack01.Module04.Cell001.CellTemperature",
+    "EVBatterySample.BMS.BatteryPack01.Module01.AvgCellTemperature",
+    "EVBatterySample.BMS.BatteryPack01.Module02.AvgCellTemperature",
+    "EVBatterySample.BMS.BatteryPack01.Module03.AvgCellTemperature",
+    "EVBatterySample.BMS.BatteryPack01.Module04.AvgCellTemperature",
     "EVBatterySample.BMS.Relay01.StatusQualifier_enum",
     "EVBatterySample.BMS.Relay01.Status"
   ] 
