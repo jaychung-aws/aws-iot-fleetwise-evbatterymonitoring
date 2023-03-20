@@ -6,6 +6,9 @@ samconfig.toml
 upload.sh
 **/.aws-sam/**
 
+### Lambda boto3 Libraries ###
+cloud/batteryhealthmonitoring/lambdalibs/*
+
 
 ### Linux ###
 *~
