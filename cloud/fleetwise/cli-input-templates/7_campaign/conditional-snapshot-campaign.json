@@ -1,12 +1,12 @@
 {
   "name": "conditional-snapshot-campaign",
   "signalCatalogArn": "arn:aws:iotfleetwise:${AWS_REGION}:${AWS_ACCOUNT_ID}:signal-catalog/main-signal-catalog",
-  "targetArn": "arn:aws:iotfleetwise:${AWS_REGION}:${AWS_ACCOUNT_ID}:fleet/blog-fleet",
+  "targetArn": "arn:aws:iotfleetwise:${AWS_REGION}:${AWS_ACCOUNT_ID}:fleet/blog-healthy-fleet",
 
   "collectionScheme": {
     "conditionBasedCollectionScheme": {
       "conditionLanguageVersion": 1,
-      "expression": "$variable.`EVBatterySample.BMS.BatteryPack01.Module01.Cell001.CellTemperature` > 40.0",
+      "expression": "$variable.`EVBatterySample.BMS.BatteryPack01.MaxAvgModuleTemperature` > 40.0",
       "minimumTriggerIntervalMs": 5000,
       "triggerMode": "ALWAYS"
     }
@@ -15,6 +15,10 @@
   "dataExtraDimensions": ["VehicleVIN"],
   "spoolingMode": "TO_DISK",
   "signalsToCollect": [
+    {
+      "maxSampleCount": 100,
+      "name": "OBD.EngineSpeed"
+    },
     {
       "maxSampleCount": 100,
       "name": "EVBatterySample.Drivetrain.ActualVehicleSpeed"
@@ -29,11 +33,7 @@
     },
     {
       "maxSampleCount": 100,
-      "name": "EVBatterySample.BMS.BatteryPack01.Module01.Cell001.CellTemperature"
-    },
-    {
-      "maxSampleCount": 100,
-      "name": "OBD.EngineSpeed"
+      "name": "EVBatterySample.BMS.BatteryPack01.MaxAvgModuleTemperature"
     },
     {
       "maxSampleCount": 100,
@@ -50,6 +50,26 @@
     {
       "maxSampleCount": 100,
       "name": "EVBatterySample.BMS.BatteryPack01.ShuntMinusCurrentQualifier_enum"
+    },
+    {
+      "maxSampleCount": 100,
+      "name": "EVBatterySample.BMS.BatteryPack01.CoolingStatus"
+    },
+    {
+      "maxSampleCount": 100,
+      "name": "EVBatterySample.BMS.BatteryPack01.Module01.AvgCellTemperature"
+    },
+    {
+      "maxSampleCount": 100,
+      "name": "EVBatterySample.BMS.BatteryPack01.Module02.AvgCellTemperature"
+    },
+    {
+      "maxSampleCount": 100,
+      "name": "EVBatterySample.BMS.BatteryPack01.Module03.AvgCellTemperature"
+    },
+    {
+      "maxSampleCount": 100,
+      "name": "EVBatterySample.BMS.BatteryPack01.Module04.AvgCellTemperature"
     }
   ]
 }

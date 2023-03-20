@@ -104,6 +104,12 @@
       }
     },
     {
+      "sensor": {
+        "dataType": "BOOLEAN",
+        "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.CoolingStatus"
+      }
+    },
+    {
       "branch": {
         "description": "Module 1",
         "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.Module01"
@@ -128,33 +134,9 @@
       }
     },
     {
-      "branch": {
-        "description": "BP 01 / Module 01 / Cell 001",
-        "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.Module01.Cell001"
-      }
-    },
-    {
-      "branch": {
-        "description": "BP 01 / Module 02 / Cell 001",
-        "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.Module02.Cell001"
-      }
-    },
-    {
-      "branch": {
-        "description": "BP 01 / Module 03 / Cell 001",
-        "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.Module03.Cell001"
-      }
-    },
-    {
-      "branch": {
-        "description": "BP 01 / Module 04 / Cell 001",
-        "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.Module04.Cell001"
-      }
-    },
-    {
       "sensor": {
         "dataType": "DOUBLE",
-        "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.Module01.Cell001.CellTemperature",
+        "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.MaxAvgModuleTemperature",
         "max": 500,
         "min": -40.0,
         "unit": "degC"
@@ -163,7 +145,7 @@
     {
       "sensor": {
         "dataType": "DOUBLE",
-        "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.Module02.Cell001.CellTemperature",
+        "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.Module01.AvgCellTemperature",
         "max": 500,
         "min": -40.0,
         "unit": "degC"
@@ -172,7 +154,7 @@
     {
       "sensor": {
         "dataType": "DOUBLE",
-        "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.Module03.Cell001.CellTemperature",
+        "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.Module02.AvgCellTemperature",
         "max": 500,
         "min": -40.0,
         "unit": "degC"
@@ -181,7 +163,16 @@
     {
       "sensor": {
         "dataType": "DOUBLE",
-        "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.Module04.Cell001.CellTemperature",
+        "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.Module03.AvgCellTemperature",
+        "max": 500,
+        "min": -40.0,
+        "unit": "degC"
+      }
+    },
+    {
+      "sensor": {
+        "dataType": "DOUBLE",
+        "fullyQualifiedName": "EVBatterySample.BMS.BatteryPack01.Module04.AvgCellTemperature",
         "max": 500,
         "min": -40.0,
         "unit": "degC"

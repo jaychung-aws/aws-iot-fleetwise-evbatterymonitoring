@@ -1,6 +1,6 @@
 {
   "name": "continious-monitoring-campaign",
-  "targetArn": "arn:aws:iotfleetwise:${AWS_REGION}:${AWS_ACCOUNT_ID}:fleet/blog-fleet",
+  "targetArn": "arn:aws:iotfleetwise:${AWS_REGION}:${AWS_ACCOUNT_ID}:fleet/blog-healthy-fleet",
   "signalCatalogArn": "arn:aws:iotfleetwise:${AWS_REGION}:${AWS_ACCOUNT_ID}:signal-catalog/main-signal-catalog",
   "collectionScheme": {
     "timeBasedCollectionScheme": {
@@ -8,9 +8,15 @@
     }
   },
   "diagnosticsMode": "OFF",
-  "dataExtraDimensions": ["VehicleVIN"],
+  "dataExtraDimensions": [
+    "VehicleVIN"
+  ],
   "spoolingMode": "TO_DISK",
   "signalsToCollect": [
+    {
+      "name": "EVBatterySample.Drivetrain.ActualVehicleSpeed",
+      "maxSampleCount": 1
+    },
     {
       "name": "EVBatterySample.BMS.BatteryPack01.BatteryPackVoltagePlus",
       "maxSampleCount": 1
@@ -20,13 +26,9 @@
       "maxSampleCount": 1
     },
     {
-      "name": "EVBatterySample.Drivetrain.ActualVehicleSpeed",
+      "name": "EVBatterySample.BMS.BatteryPack01.MaxAvgModuleTemperature",
       "maxSampleCount": 1
     },
-    {
-      "name": "EVBatterySample.BMS.BatteryPack01.Module01.Cell001.CellTemperature",
-      "maxSampleCount": 3
-  },
     {
       "name": "EVBatterySample.BMS.BatteryPack01.ShuntPlusCurrent_a",
       "maxSampleCount": 1

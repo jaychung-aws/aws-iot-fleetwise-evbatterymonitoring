@@ -1,5 +1,5 @@
 {
-  "fleetId": "blog-inspection-fleet",
+  "fleetId": "blog-unhealthy-fleet",
   "signalCatalogArn": "arn:aws:iotfleetwise:${AWS_REGION}:${AWS_ACCOUNT_ID}:signal-catalog/main-signal-catalog",
   "description": "Example fleet of vehicles with unhealthy battery"
 }

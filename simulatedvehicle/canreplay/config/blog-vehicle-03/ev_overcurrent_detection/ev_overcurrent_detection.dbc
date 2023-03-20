@@ -43,8 +43,8 @@ BO_ 201 BatteryPack01VoltagePlus_v: 8 Vector__XXX
 BO_ 202 BatteryPack01VoltageMinus_v: 8 Vector__XXX
  SG_ BatteryPack01VoltageMinus_v : 0|24@1+ (0.25,-100) [-100|1000] "v" Vector__XXX
 
-BO_ 301 BatteryPack01Module01Cell001te: 8 Vector__XXX
- SG_ BatteryPack01Module01Cell001temperature_c : 0|24@1+ (0.5,-40) [-40|1000] "degC" Vector__XXX
+BO_ 301 BatteryPack01Module01AvgCellTe: 8 Vector__XXX
+ SG_ BatteryPack01Module01AvgCellTemperature_c : 0|24@1+ (0.5,-40) [-40|1000] "degC" Vector__XXX
 
 BO_ 500 BMSRelay01Status_enum: 8 Vector__XXX
  SG_ BMSRelay01Status : 0|24@1+ (1,0) [0|9999999] "status" Vector__XXX
@@ -64,14 +64,20 @@ BO_ 602 BatteryPack01ShuntPlusCurrentQ: 8 Vector__XXX
 BO_ 603 BatteryPack01ShuntMinusCurre01: 8 Vector__XXX
  SG_ BatteryPack01ShuntMinusCurrentQualifier_enum : 0|24@1+ (1,0) [0|5] "qualifier" Vector__XXX
 
-BO_ 317 BatteryPack01Module02Cell001te: 8 Vector__XXX
- SG_ BatteryPack01Module02Cell001temperature_c : 0|24@1+ (0.5,-40) [-40|1000] "degC" Vector__XXX
+BO_ 317 BatteryPack01Module02AvgCellTe: 8 Vector__XXX
+ SG_ BatteryPack01Module02AvgCellTemperature_c : 0|24@1+ (0.5,-40) [-40|1000] "degC" Vector__XXX
 
-BO_ 333 BatteryPack01Module03Cell001te: 8 Vector__XXX
- SG_ BatteryPack01Module03Cell001temperature_c : 0|24@1+ (0.5,-40) [-40|1000] "degC" Vector__XXX
+BO_ 333 BatteryPack01Module03AvgCellTe: 8 Vector__XXX
+ SG_ BatteryPack01Module03AvgCellTemperature_c : 0|24@1+ (0.5,-40) [-40|1000] "degC" Vector__XXX
 
-BO_ 349 BatteryPack01Module04Cell001te: 8 Vector__XXX
- SG_ BatteryPack01Module04Cell001temperature_c : 0|24@1+ (0.5,-40) [-40|1000] "degC" Vector__XXX
+BO_ 349 BatteryPack01Module04AvgCellTe: 8 Vector__XXX
+ SG_ BatteryPack01Module04AvgCellTemperature_c : 0|24@1+ (0.5,-40) [-40|1000] "degC" Vector__XXX
+
+BO_ 285 BatteryPack01MaxAvgModuleTempe: 8 Vector__XXX
+ SG_ BatteryPack01MaxAvgModuleTemperature_c : 0|24@1+ (0.5,-40) [-40|1000] "degC" Vector__XXX
+
+BO_ 200 BatteryPack01CoolingStatus_boo: 8 Vector__XXX
+ SG_ BatteryPack01CoolingStatus_boolean : 7|8@0+ (1,0) [0|1] "" Vector__XXX
 
 
 BA_DEF_ SG_  "SignalType" STRING ;
